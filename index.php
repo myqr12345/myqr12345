@@ -31,9 +31,17 @@
   h2
   {
     font-size: 22px;
-    margin-left: 54px;
+    text-align:center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
+  }
+  h3
+  {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    text-align:center;
+    color: #7380ec;
   }
 
 </style>
@@ -43,7 +51,9 @@
           <div class="imahe">
             <img src="RTILOGO.png" alt="" height="250" width="220" style="margin-left: 70px;margin-top: 40px;">
             <h2>RAMCAR TECHNOLOGY</h2>
-            <h2 style="margin-top: -16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INCORPORATED</h2>
+            <h2 style="margin-top:-20px;">INCORPORATED</h2>
+            <h3><?php echo $_GET['id']; ?></h3>
+            <h3 style="margin-top:-15px;"><?php echo $_GET['pn']; ?></h3>
           </div>
           
         </div>
