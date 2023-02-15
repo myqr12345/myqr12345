@@ -51,12 +51,22 @@
           <div class="imahe">
             <img src="RTILOGO.png" alt="" height="250" width="220" style="margin-left: 70px;margin-top: 40px;">
             <h2>RAMCAR TECHNOLOGY</h2>
-            <h2 style="margin-top:-20px;">INCORPORATED</h2>
-            <h3><?php echo $_GET['id']; ?></h3>
-            <h3 style="margin-top:-15px;"><?php echo $_GET['pn']; ?></h3>
+            <h2 style="margin-top:-20px;" >INCORPORATED</h2>
+            <h3 id="id"></h3>
+            <h3 style="margin-top:-15px;" id="pn"></h3>
           </div>
           
         </div>
     </div>
 </body>
+<script>
+    const url = new URL(window.location.href);
+    alert(url);
+    var search = url.search;
+    var output = search.split('|');
+    
+    document.getElementById('id').innerHTML = output[0].substring(output[0].indexOf('=')+1);
+    document.getElementById('pn').innerHTML = output[1].substring(output[1].indexOf('=')+1);
+
+</script>
 </html>
